@@ -31,4 +31,5 @@ public class OrderController {
     public CommonResult<Payment> getPayment(@PathVariable("id") Long id){
         return restTemplate.getForObject(PAYMENT_URL+"/payment/get/"+id,CommonResult.class);
     }
+
 }
